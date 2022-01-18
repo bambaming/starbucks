@@ -1,21 +1,3 @@
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click',function(){
-   searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder','통합검색');
-});
-
-searchInputEl.addEventListener('blur',function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder','');
-});
-
-
 
 //배지 배너 스크롤에 따라 사라졌다 나타나기
 const badgeEl = document.querySelector('header .badges');
@@ -159,5 +141,3 @@ spyEls.forEach(function(spyEl){
 });
 
 
-const thisyear = document.querySelector('.this-year');
-thisyear.textContent = new Date().getFullYear();
